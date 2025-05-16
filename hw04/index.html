@@ -154,8 +154,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
-    </div>
+      使用這些工具讓我感到驚喜，也有些興奮。即使我沒有高階設備，透過Civitai和Colab的協助，我還是能實際操作並生成圖像。整個流程看起來很複雜，但教學很清楚，讓我一步步完成，成功執行ComfyUI後真的很有成就感。我覺得這樣的技術非常酷，也讓我更有信心繼續探索AI繪圖的可能性。感受到科技的進步真的很貼近每個人，也讓我對未來的創作充滿期待。
   </div>
 
   <!-- ------------------------------------------------>
@@ -170,22 +169,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成ComfyUI建置</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 完成芙莉蓮文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 替換模型完成辛梅爾文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -195,18 +194,54 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>ComfyUI+工作流</figcaption>
+            <img src="ss.png" width="100%"/>
+        </figure>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty"> 
+      <figure>
+        <figcaption>完成芙莉蓮Checkpoint、LoRA文生圖</figcaption>
+        <a href="https://civitai.com/models/1188071?modelVersionId=1337429">Checkpoint連結</a>
+        <br>
+        <a href="https://civitai.com/models/291955/frieren-beyond-journeys-end">LoRA連結</a>
+        <p>1344 * 768</p>
+        <p>LoRA Strength : 1.0</p>
+        <p>positive : masterpiece, best quality, high score, great score, absurdres, illustration, pointy ears, 1girl, solo, frieren, sousou no frieren, long hair, 1boy, flowers, head wreath, smile, petals, earrings, jewelry, shirt, elf, blue flower, outdoors, green eyes, upper body, long sleeves, striped shirt, striped, sky, solo focus, open mouth, white hair, falling petals, glowing, <lora:mix-a4-v2:1>, <lora:mix-a4-v2:1>
+        </p>
+        <p>negative : lowres, bad anatomy, bad hands, text, error, missing finger, extra digits, fewer digits, cropped, worst quality, low quality, low score, bad score, average score, signature, watermark, username, blurry,
+        </p>
+        <img src="aihw4.png" width="100%"/>
+      </figure>
+    </div>
+  </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>替換Ckeckpoint、LoRA完成辛梅爾文生圖</figcaption>
+        <a href="https://civitai.com/models/1188071?modelVersionId=1337429">Checkpoint連結</a>
+        <br>
+        <a href="https://civitai.com/models/291955/frieren-beyond-journeys-end">LoRA連結1</a>
+        <p>1024 * 1280</p>
+        <p>LoRA1 Strength : 0.5</p>
+        <p>LoRA2 Strength : 0.45</p>
+        <p>positive :  masterpiece,best quality,1boy, 1girl, frieren, himmel (sousou no frieren), outdoors, upper body, eye contact, navy blue hair, cape, capelet, earrings, dappled sunlight, night, hand on another&#039;s head, kesyeru, sousou no frieren, twitter username, watermark, <lora:mix-a4-v2:1>,>
+        </p>
+        <p>negative : nsfw,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,artist name,
+        <img src="aihw4(2).png" width="100%"/>
+      </figure>
+    </div>
+  </div>
 
+  <!-- ------------------------------------------------>
 
 <script>
   $(function() {
